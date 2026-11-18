@@ -174,11 +174,11 @@ options:
   output_plots: True
   
 paths:
-  gnps_job_id:  # The GNPS job id you want to treat
+  gnps_job_id:  1f0c8540d6174cae82720c8689965535 # The GNPS job id you want to treat
   input_folder: /home/allardpm/git_repos/mapp-metabolomics-unit/sa2026-dbgi/docs/mapp_project_00050/mapp_batch_00283/results/met_annot_enhancer # The path were you want your GNPS job folder to be placed
   project_name: mapp_batch_00283 #ISDB_annot_LP_plantfungi_set # The name you want to give to your project, output resulst in data_out/project_name
   output_folder: /home/allardpm/git_repos/mapp-metabolomics-unit/sa2026-dbgi/docs/mapp_project_00050/mapp_batch_00283/results/met_annot_enhancer # the path for your output to be stored in
-  metadata_path: /Users/pma/01_large_files/lotus/230106_frozen_metadata.csv # Path to the metadata of the spectral file /210715_inhouse_metadata.csv /211220_frozen_metadata.csv You can use multiple ones. Just list them as [a.csv, b.csv, c.csv]
+  metadata_path: /Users/pma/01_large_files/lotus/260413_frozen_metadata.csv # Path to the metadata of the spectral file /210715_inhouse_metadata.csv /211220_frozen_metadata.csv You can use multiple ones. Just list them as [a.csv, b.csv, c.csv]
   db_file_path: /Users/pma/01_large_files/mgf/isdb_pos_cleaned.pkl  # Path to your spectral library file. You can use multiple ones. Just list them as [a.mgf, b.mgf, c.mgf]
   adducts_pos_path: data_loc/230106_frozen_metadata/230106_frozen_metadata_adducts_pos.tsv.gz # Path to the adducts file in pos mode
   adducts_neg_path: data_loc/230106_frozen_metadata/230106_frozen_metadata_adducts_neg.tsv.gz # Path to the adducts file in neg mode
@@ -197,7 +197,7 @@ repond_params:
   top_to_output: 1 # Top X for final ouput
   ppm_tol: 2 # ppm tol to be used for ms1 match
   polarity: 'pos' # ion mode you are working with (pos or neg)
-  organism_header: 'source_taxon' # Mandatory: header of your samples' organism in metadata file
+  organism_header: 'ATTRIBUTE_col_scientific_name' # Mandatory: header of your samples' organism in metadata file
   var_one_header: 'source_taxon' # Optional (Run_line_x_line parameter)
 
   sampletype_header: 'sample_type' # The header for a column describing the sample type (sample, BK or QC)
